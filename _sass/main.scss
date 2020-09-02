@@ -78,32 +78,71 @@ blockquote {
 }
 
 /*
- * // Navigation // */
+// Navigation // */
 
 ul.navbar {
-  margin: 0;
-  padding: 0;
+  &, & li, & li a { margin: 0; padding: 0; }
+  position: relative;
   list-style-type: none;
   /*background-color: #ccc;*/
+
+  & li {
+    display: inline-block;
+    padding: 5px 10px 5px 0;
+
+    & a {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: $clForeground;
+    font-size: 1.2rem;
+    /*background-color: #daa;*/
+
+    &:hover { text-decoration: underline; }
+    &.active { font-weight: bold; };
+    /*&:hover { background-color: #c99; }*/
+    }
+  }
+
+  & li.brand {
+    & img {
+      height: 2rem;
+      margin-right: .2rem;
+    }
+    $st-indent: .5px;
+    $st-color: #222;
+
+    & a {
+      font-size: 2rem;
+      font-weight: bold;
+      color: $clAccent;
+      text-shadow:
+       (-$st-indent) (-$st-indent) 0 $st-color,  
+         $st-indent  (-$st-indent) 0 $st-color,
+       (-$st-indent)   $st-indent  0 $st-color,
+         $st-indent    $st-indent  0 $st-color;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  & .right-section {
+    position: absolute;
+    right: 0; 
+    bottom: 0;
+
+    & li {
+      padding: 5px 0 5px 10px;
+    }
+  }
 }
 
-.navbar li {
-  display: inline-block;
-  margin: 0;
-  margin-right: 5px;
-  padding: 5px 10px 5px 0;
-}
+/*
+// Blog Posts // */
 
-.navbar li a {
-  display: block;
-  padding: 5px;
-  text-align: center;
-  text-decoration: none;
-  color: $clForeground;
-  font-size: 1.2rem;
-  /*background-color: #daa;*/
-
-  &:hover { text-decoration: underline; }
-  &.active { font-weight: bold; };
-  /*&:hover { background-color: #c99; }*/
+.post-date {
+  font-style: italic;
 }

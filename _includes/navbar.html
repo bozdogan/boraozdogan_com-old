@@ -1,11 +1,14 @@
 <ul class="navbar">
-{%- for item in include.collection %}
-  <li>
-  {%- if item.url != false -%}
-    <a href="{{ item.url | relative-url}}" {%- if include.active == item.url %} class="active"{% endif -%}>{{- item.title -}}</a>
-  {%- else -%}
-    {{- item.title -}}
-  {%- endif -%}
-  </li>
-{%- endfor %}
+  <li class="brand"><a href="{{site.url}}"><img src="/res/brand.png">bozdogan</a></li>
+  <div class="right-section">
+  {%- for item in include.collection -%}
+    <li>
+    {%- if item.url != false -%}
+      <a href="{{item.url | relative-url}}" {%- if include.active == item.url %} class="active"{% endif -%}>{{- item.title -}}</a>
+    {%- else -%}
+      {{- item.title -}}
+    {%- endif -%}
+    </li>
+  {%- endfor -%}
+  </div>
 </ul>
