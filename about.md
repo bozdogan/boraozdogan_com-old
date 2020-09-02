@@ -3,7 +3,7 @@ layout: default
 title: About Page
 ---
 
-## Testing Stuff
+# Testing Stuff
 
 This was a **bold** move. And you know, we are still technically _testing_.
 
