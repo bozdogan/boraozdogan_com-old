@@ -1,0 +1,109 @@
+$clBackground: #F2F2F2;
+$clForeground: #232323;
+$clAnchor: #2384F2;
+$clAccent: #F28423;
+
+$bodyFont: Consolas, Roboto Mono, monospace;
+
+:root {
+  font-size: 16px;
+}
+
+html {
+  color: $clForeground;
+  background-color: $clBackground;
+  font-family: $bodyFont;
+  line-height: 1.2;
+}
+
+a {
+  color: $clAnchor;
+}
+
+h2, h3, h4, h5, h6 { margin-top: 3rem; }
+
+hr { margin: 2rem 0; }
+
+p { margin: 1rem 0; }
+
+li { margin: 0.4rem 0; }
+
+*:target { background-color: #FFF000; }
+
+.container {
+  max-width: 80ch;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+hr {
+  text-align: center;
+  border: 0;
+
+  &:before { content: '/////' }
+  &:after { content: attr(data-content) '/////' }
+}
+
+table, th, td {
+  width: 100%;
+  border: thin solid $clForeground;
+  border-collapse: collapse;
+  padding: 0.4rem;
+}
+
+b, strong {
+  color: $clAccent;
+}
+
+i, em {
+}
+
+code {
+  color: $clBackground;
+  background-color: $clForeground;
+}
+
+div.highlighter-rouge code {
+  display: block;
+  overflow-x: auto;
+  padding: 1rem;
+}
+
+blockquote {
+  font-style: italic;
+  border: thin solid $clForeground;
+  padding: 1rem;
+
+  p { margin: 0; }
+}
+
+/*
+ * // Navigation // */
+
+ul.navbar {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  /*background-color: #ccc;*/
+}
+
+.navbar li {
+  display: inline-block;
+  margin: 0;
+  margin-right: 5px;
+  padding: 5px 10px 5px 0;
+}
+
+.navbar li a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  color: $clForeground;
+  font-size: 1.2rem;
+  /*background-color: #daa;*/
+
+  &:hover { text-decoration: underline; }
+  &.active { font-weight: bold; };
+  /*&:hover { background-color: #c99; }*/
+}

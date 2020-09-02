@@ -1,0 +1,9 @@
+entries:
+    - title: Home
+      url: /
+
+    - title: Blog
+      url: /posts.html
+
+    - title: About
+      url: /about.html

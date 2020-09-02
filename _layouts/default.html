@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <title>{{ page.title | default: layout.title }} - {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ "/css/main.css" | relative-url }}">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl | prepend: site.url }}" />
+</head>
+<body>
+
+<div class="container">
+  {% include navbar.html active=page.url collection=site.data.menu.entries %}
+  {{ content }}
+</div>
+
+</body>
+</html>
