@@ -202,6 +202,34 @@ ul.navbar {
 /*
 // Blog Posts // */
 
-.post-date {
-  font-style: italic;
+.post-header {
+  display: flex;
+  flex-wrap: wrap;
+
+  & h1 {
+    margin: .5rem 0 1.2rem;
+    flex-grow: 1; 
+  }
+
+  & .post-date {
+    margin: .5rem 0;
+    font-style: italic;
+    text-align: right;
+  }
+
+
+  @media (max-width: $bp-mobile) {
+    & {
+      display: block;
+    }
+
+    & h1 {
+      font-size: 1.6rem;
+      margin-bottom: .2rem;
+    }
+
+    & .post-date {
+      margin: 0 0 1rem;
+    }
+  }
 }

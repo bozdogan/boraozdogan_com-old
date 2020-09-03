@@ -24,9 +24,11 @@ At some point, I thought about writing my own tool but I quickly realized that I
 At the beginning, all I wanted was to read blog post from a .txt file and paste it in place of some marker text like `<<INSERT CONTENT HERE>>` in the template to form a complete document for that blog post. Well, Jekyll does better. It gives me the tools to build and test a website more quickly. There's loads of ready-to-use Jekyll themes which are serves as sort of a template for your site, but I preferred to write all the code myself like I would do otherwise.
 
 So I opened the Linux shell and typed this code:
-```
+```sh
 jekyll new boraozdogan.com --blank
 ```
 
 That gave me a basic setup. No themes, no pre-decided stuff like how my pages should look like. That is what I wanted. Because I hate when websites take ages to load and I don't want to have one of that sites. I think the developers would be lazy to do these slow sites that sometimes it doesn't even worth waiting them to load. And I also want to go through the whole process of designing and coding. Maybe along the way I'll have a better understanding of why devs do what they do.
+
+---
 
