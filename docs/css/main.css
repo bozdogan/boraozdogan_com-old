@@ -3,6 +3,8 @@
 
 html { color: #232323; background-color: #F2F2F2; font-family: Consolas, Roboto Mono, monospace; line-height: 1.2; }
 
+body { margin: 0; padding: 0; }
+
 a { color: #2384F2; }
 
 h2, h3, h4, h5, h6 { margin-top: 3rem; }
@@ -15,7 +17,9 @@ li { margin: 0.4rem 0; }
 
 *:target { background-color: #FFF000; }
 
-.container { max-width: 80ch; margin: 4rem auto; padding: 0 1rem; }
+.container { max-width: 80ch; margin: 2rem auto; padding: 0 1rem; }
+
+@media (max-width: 460px) { .container { margin: 1rem 0 0; } }
 
 hr { text-align: center; border: 0; }
 
@@ -37,7 +41,7 @@ blockquote p { margin: 0; }
 
 /*
 // Navigation // */
-ul.navbar { position: relative; list-style-type: none; /*background-color: #ccc;*/ }
+ul.navbar { position: relative; list-style-type: none; overflow: shown; /*background-color: #ccc;*/ }
 
 ul.navbar, ul.navbar li, ul.navbar li a { margin: 0; padding: 0; }
 
@@ -58,6 +62,8 @@ ul.navbar li.brand a:hover { text-decoration: none; }
 ul.navbar .right-section { position: absolute; right: 0; bottom: 0; }
 
 ul.navbar .right-section li { padding: 5px 0 5px 10px; }
+
+@media (max-width: 460px) { ul.navbar { margin-bottom: 3rem; } ul.navbar .right-section { bottom: -2rem; } }
 
 /*
 // Blog Posts // */

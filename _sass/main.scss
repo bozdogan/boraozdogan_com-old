@@ -3,6 +3,8 @@ $clForeground: #232323;
 $clAnchor: #2384F2;
 $clAccent: #F28423;
 
+$bp-mobile: 460px;
+
 $bodyFont: Consolas, Roboto Mono, monospace;
 
 :root {
@@ -15,6 +17,8 @@ html {
   font-family: $bodyFont;
   line-height: 1.2;
 }
+
+body {margin: 0; padding: 0;}
 
 a {
   color: $clAnchor;
@@ -32,8 +36,12 @@ li { margin: 0.4rem 0; }
 
 .container {
   max-width: 80ch;
-  margin: 4rem auto;
+  margin: 2rem auto;
   padding: 0 1rem;
+
+  @media (max-width: $bp-mobile) {
+    margin: 1rem 0 0;
+  }
 }
 
 hr {
@@ -84,6 +92,8 @@ ul.navbar {
   &, & li, & li a { margin: 0; padding: 0; }
   position: relative;
   list-style-type: none;
+
+  overflow: shown;
   /*background-color: #ccc;*/
 
   & li {
@@ -138,7 +148,19 @@ ul.navbar {
       padding: 5px 0 5px 10px;
     }
   }
+
+
+  @media (max-width: $bp-mobile) {
+    & {
+      margin-bottom: 3rem;
+    }
+
+    & .right-section {
+      bottom: -2rem;     
+    }
+  }
 }
+
 
 /*
 // Blog Posts // */
