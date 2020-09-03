@@ -41,9 +41,7 @@ blockquote p { margin: 0; }
 
 /*
 // Navigation // */
-ul.navbar { position: relative; list-style-type: none; overflow: shown; /*background-color: #ccc;*/ }
-
-ul.navbar, ul.navbar li, ul.navbar li a { margin: 0; padding: 0; }
+ul.navbar { margin: 0 0 2rem 0; padding: 0; position: relative; overflow: shown; list-style-type: none; /*background-color: #ccc;*/ }
 
 ul.navbar li { display: inline-block; padding: 5px 10px 5px 0; }
 
@@ -53,11 +51,15 @@ ul.navbar li a:hover { text-decoration: underline; }
 
 ul.navbar li a.active { font-weight: bold; }
 
-ul.navbar li.brand img { height: 2rem; margin-right: .2rem; }
+ul.navbar li.brand { position: relative; }
 
 ul.navbar li.brand a { font-size: 2rem; font-weight: bold; color: #F28423; text-shadow: -0.5px -0.5px 0 #222, 0.5px -0.5px 0 #222, -0.5px 0.5px 0 #222, 0.5px 0.5px 0 #222; }
 
 ul.navbar li.brand a:hover { text-decoration: none; }
+
+ul.navbar li.brand img { height: 4rem; position: absolute; bottom: -.7rem; }
+
+ul.navbar li.brand span { margin-left: 3.2rem; }
 
 ul.navbar .right-section { position: absolute; right: 0; bottom: 0; }
 
