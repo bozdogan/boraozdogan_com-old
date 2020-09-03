@@ -18,7 +18,18 @@ html {
   line-height: 1.2;
 }
 
-body {margin: 0; padding: 0;}
+body {
+  margin: 0; 
+  padding: 0;
+}
+
+main {
+  /* Keep footer at the bottom even if the content is short s*/
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between
+}
 
 a {
   color: $clAnchor;
@@ -35,11 +46,13 @@ li { margin: 0.4rem 0; }
 *:target { background-color: #FFF000; }
 
 .container {
+  width: 100%;
   max-width: 80ch;
-  margin: 2rem auto;
+  margin: 2rem auto 4rem;
   padding: 0 1rem;
 
   @media (max-width: $bp-mobile) {
+    width: auto;
     margin: 1rem 0 0;
   }
 }
@@ -83,6 +96,18 @@ blockquote {
   padding: 1rem;
 
   p { margin: 0; }
+}
+
+footer {
+  text-align: center;
+  padding-top: .5rem;
+  height: 2.5rem;
+  color: #444;
+  background-color: #ccc;
+
+  & small {
+    font-size: .8rem;
+  }
 }
 
 /*

@@ -5,6 +5,8 @@ html { color: #232323; background-color: #F2F2F2; font-family: Consolas, Roboto 
 
 body { margin: 0; padding: 0; }
 
+main { /* Keep footer at the bottom even if the content is short s*/ display: flex; min-height: 100vh; flex-direction: column; justify-content: space-between; }
+
 a { color: #2384F2; }
 
 h2, h3, h4, h5, h6 { margin-top: 3rem; }
@@ -17,9 +19,9 @@ li { margin: 0.4rem 0; }
 
 *:target { background-color: #FFF000; }
 
-.container { max-width: 80ch; margin: 2rem auto; padding: 0 1rem; }
+.container { width: 100%; max-width: 80ch; margin: 2rem auto 4rem; padding: 0 1rem; }
 
-@media (max-width: 460px) { .container { margin: 1rem 0 0; } }
+@media (max-width: 460px) { .container { width: auto; margin: 1rem 0 0; } }
 
 hr { text-align: center; border: 0; }
 
@@ -38,6 +40,10 @@ div.highlighter-rouge code { display: block; overflow-x: auto; padding: 1rem; }
 blockquote { font-style: italic; border: thin solid #232323; padding: 1rem; }
 
 blockquote p { margin: 0; }
+
+footer { text-align: center; padding-top: .5rem; height: 2.5rem; color: #444; background-color: #ccc; }
+
+footer small { font-size: .8rem; }
 
 /*
 // Navigation // */

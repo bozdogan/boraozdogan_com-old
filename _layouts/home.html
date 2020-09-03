@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-<head>
-  {% include head.html%}
+---
+layout: default
+homepage: true
+---
 
-  <title>
-    {%- if page.title -%}
-      {{site.title}}: {{page.title}}
-    {%- else -%}
-      {{site.title}}
-    {%- endif -%}
-  </title>
-</head>
-<body>
+{{content}}
 
-<div class="container">
-  {% include navbar.html active=page.url collection=site.data.menu.entries %}
-  {{ content }}
-</div>
-
-</body>
-</html>
