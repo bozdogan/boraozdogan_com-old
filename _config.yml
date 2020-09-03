@@ -1,7 +1,6 @@
 url: "https://boraozdogan.com"
 baseurl: "/" 
 title: "b.ozdogan"
-destination: docs
 exclude:
   - docs
   - openproject.bat

@@ -23,6 +23,8 @@ li { margin: 0.4rem 0; }
 
 @media (max-width: 460px) { .container { width: auto; margin: 1rem 0 0; } }
 
+article { text-align: justify; }
+
 hr { text-align: center; border: 0; }
 
 hr:before { content: '/////'; }
