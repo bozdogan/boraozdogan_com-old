@@ -1,7 +1,7 @@
 ---
 layout: post
 author: bora
-category: how-did-i
+category: webmaster
 tags: [jekyll,]
 ---
 I was thinking about it for a long time but now I'm actually taking action and making it happen. It just took a while, like 2 years.. I first thought to have a blog in 2018 when I was a sophomore in university and full of all sorts of crazy ideas. I wanted to make lots of applications and shot lots of videos for YouTube, and eventually gain some online presence. Unfortunately, I'm lazy.. That's why it took years for me to setup a simple website :/

@@ -1,3 +1,4 @@
+/* THE BORING THEME by b.ozdogan */
 @import url(native.css);
 :root { font-size: 16px; }
 
@@ -43,7 +44,7 @@ blockquote { font-style: italic; border: thin solid #232323; padding: 1rem; }
 
 blockquote p { margin: 0; }
 
-footer { text-align: center; padding-top: .5rem; height: 1.8rem; color: #444; background-color: #ccc; }
+footer { text-align: center; margin-top: 1rem; padding-top: .5rem; height: 1.8rem; border: 1px solid #aaa; background-color: #ccc; color: #666; }
 
 footer small { font-size: .8rem; }
 

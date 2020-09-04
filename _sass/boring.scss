@@ -1,3 +1,6 @@
+/* THE BORING THEME
+ *     by b.ozdogan */
+
 $clBackground: #F2F2F2;
 $clForeground: #232323;
 $clAnchor: #2384F2;
@@ -104,10 +107,12 @@ blockquote {
 
 footer {
   text-align: center;
+  margin-top: 1rem;
   padding-top: .5rem;
   height: 1.8rem;
-  color: #444;
+  border: 1px solid #aaa;
   background-color: #ccc;
+  color: #666;
 
   & small {
     font-size: .8rem;
