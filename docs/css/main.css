@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* THE BORING THEME by b.ozdogan */
 @import url(native.css);
 :root { font-size: 16px; }
@@ -78,9 +79,19 @@ ul.navbar .right-section li { padding: 5px 0 5px 10px; }
 
 /*
 // Home Page // */
-.blog-post-list .blog-excerpt { margin: 0 0 2rem; padding: 0 1.5rem; border: 1px solid #aaa; }
+.blog-post-list .blog-excerpt { margin: 0 0 .6rem; padding: 1rem 1.5rem; border: 1px solid #ccc; background-color: #Fff; /*!! Blog post'tan araklama TODO(bora): belki bu da .blog-header olmalıdır?? */ display: flex; flex-wrap: wrap; /* Araklama sonu*/ }
 
 .blog-post-list .blog-excerpt:last-child { margin-bottom: 0; }
+
+.blog-post-list .blog-excerpt h1 { margin: 0 0 1rem; }
+
+.blog-post-list .blog-excerpt p { margin: 0; }
+
+.blog-post-list .blog-excerpt h1 { margin: .5rem 0 1.2rem; flex-grow: 1; }
+
+.blog-post-list .blog-excerpt .post-date { margin: .5rem 0; font-style: italic; text-align: right; }
+
+@media (max-width: 460px) { .blog-post-list .blog-excerpt { display: block; } .blog-post-list .blog-excerpt h1 { font-size: 1.6rem; margin-bottom: .2rem; } .blog-post-list .blog-excerpt .post-date { margin: 0 0 1rem; } }
 
 .blog-post-list .blog-excerpt .continue-reading { text-align: right; }
 
