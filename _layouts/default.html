@@ -15,12 +15,13 @@
 </head>
 <body>
 <main>
-  <div class="container">
-    {% include navbar.html active=page.url collection=site.data.menu %}
-    {{content}}
-  </div>
+<div class="container">
+{% include navbar.html active=page.url collection=site.data.menu %}
 
-  {% include footer.html %}
+{{content}}
+</div>
+
+{% include footer.html %}
 </main>
 </body>
 </html>
