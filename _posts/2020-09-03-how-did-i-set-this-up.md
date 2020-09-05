@@ -1,10 +1,11 @@
 ---
 layout: post
 author: bora
-category: webmaster
-tags: [jekyll,]
+category: meta
+tags: [webmaster,]
 ---
 I was thinking about it for a long time but now I'm actually taking action and making it happen. It just took a while, like 2 years.. I first thought to have a blog in 2018 when I was a sophomore in university and full of all sorts of crazy ideas. I wanted to make lots of applications and shot lots of videos for YouTube, and eventually gain some online presence. Unfortunately, I'm lazy.. That's why it took years for me to setup a simple website :/
+
 
 I want to make music videos. I play the guitar and sing songs. But I'm lazy. I'm out of practice and do a lot of mistakes when try to play something decent. That's because I should have spent at least 30 minutes every day practicing the guitar. But I watched YouTube videos with that time instead.
 
@@ -28,7 +29,8 @@ So I opened the Linux shell and typed this code:
 jekyll new boraozdogan.com --blank
 ```
 
-That gave me a basic setup. No themes, no pre-decided stuff like how my pages should look like. That is what I wanted. Because I hate when websites take ages to load and I don't want to have one of that sites. I think the developers would be lazy to do these slow sites that sometimes it doesn't even worth waiting them to load. And I also want to go through the whole process of designing and coding. Maybe along the way I'll have a better understanding of why devs do what they do.
+That gave me a basic setup. No themes, no pre-decided stuff like how my pages should look like. That is what I wanted. Because I hate when websites take ages to load and I don't want to have one of that sites. I think the developers would be lazy to do these slow sites. Sometimes it doesn't even worth waiting them to load. And I also want to go through the whole process of designing and coding. Maybe along the way I'll have a better understanding of why devs do what they do.
 
 ---
 
+Well, actually this is not the final product. This is my effort to bring out a dev blog _asap_. I want to realize the ideas in my head, but ideas tend to evolve as this realization process goes on. The original idea is rarely the same with the final product. I want to document this process and this is my effort of doing that. 

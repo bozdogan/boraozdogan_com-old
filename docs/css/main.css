@@ -77,6 +77,14 @@ ul.navbar .right-section li { padding: 5px 0 5px 10px; }
 @media (max-width: 460px) { ul.navbar { margin-bottom: 3rem; } ul.navbar .right-section { bottom: -2rem; } }
 
 /*
+// Home Page // */
+.blog-post-list .blog-excerpt { margin: 0 0 2rem; padding: 0 1.5rem; border: 1px solid #aaa; }
+
+.blog-post-list .blog-excerpt:last-child { margin-bottom: 0; }
+
+.blog-post-list .blog-excerpt .continue-reading { text-align: right; }
+
+/*
 // Blog Posts // */
 .post-header { display: flex; flex-wrap: wrap; }
 

@@ -203,6 +203,25 @@ ul.navbar {
   }
 }
 
+/*
+// Home Page // */
+
+.blog-post-list {
+
+  & .blog-excerpt {
+    margin: 0 0 2rem;
+    padding: 0 1.5rem;
+    border: 1px solid #aaa;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    & .continue-reading {
+      text-align: right;
+    }
+  }
+}
 
 /*
 // Blog Posts // */
