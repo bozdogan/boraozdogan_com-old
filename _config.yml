@@ -1,6 +1,7 @@
 url: "https://boraozdogan.com"
 baseurl: "/" 
 title: "b.ozdogan"
+motto: "42'nin yanındaki 2'yi attınız..."
 exclude:
   - docs
   - openproject.bat

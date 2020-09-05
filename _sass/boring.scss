@@ -209,13 +209,46 @@ ul.navbar {
 .blog-post-list {
 
   & .blog-excerpt {
-    margin: 0 0 2rem;
-    padding: 0 1.5rem;
-    border: 1px solid #aaa;
+    margin: 0 0 .6rem;
+    &:last-child { margin-bottom: 0; }
+    padding: 1rem 1.5rem;
+    border: 1px solid #ccc;
+    background-color: #Fff;
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+    & h1 {margin: 0 0 1rem; }
+    & p { margin: 0; }
+
+    /*!! Blog post'tan araklama TODO(bora): belki bu da .blog-header olmalıdır?? */
+display: flex;
+flex-wrap: wrap;
+
+& h1 {
+  margin: .5rem 0 1.2rem;
+  flex-grow: 1; 
+}
+
+& .post-date {
+  margin: .5rem 0;
+  font-style: italic;
+  text-align: right;
+}
+
+
+@media (max-width: $bp-mobile) {
+  & {
+    display: block;
+  }
+
+  & h1 {
+    font-size: 1.6rem;
+    margin-bottom: .2rem;
+  }
+
+  & .post-date {
+    margin: 0 0 1rem;
+  }
+}
+    /* Araklama sonu*/
 
     & .continue-reading {
       text-align: right;
