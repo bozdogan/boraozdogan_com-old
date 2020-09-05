@@ -1,12 +1,18 @@
 <ul class="navbar">
   <li class="brand"><img src="/res/brand.png" id="pcmasterrace"><a href="{{site.url}}"><span>bozdogan</span></a></li>
   <div class="right-section">
-  {%- for item in include.collection -%}
+
+    <li>
+    {%- if include.collection.homeurl != false -%}
+      <a href="{{site.url}}" {%- if include.active == site.baseurl %} class="active"{% endif -%}>Home</a>
+    {%- endif -%}
+    </li>
+  {%- for item in include.collection.navitems -%}
     <li>
     {%- if item.url != false -%}
-      <a href="{{item.url | absolute_url}}" {%- if include.active == item.url %} class="active"{% endif -%}>{{- item.title -}}</a>
+      <a href="{{item.url | absolute_url}}" {%- if include.active == item.url %} class="active"{% endif -%}>{{item.title}}</a>
     {%- else -%}
-      {{- item.title -}}
+      {{item.title}}
     {%- endif -%}
     </li>
   {%- endfor -%}

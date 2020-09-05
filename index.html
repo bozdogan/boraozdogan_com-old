@@ -7,13 +7,16 @@ I saw the tail of a comet.</p>
 
 <p>Here is my latest posts:</p>
 
+<!--
+TODO(bora): It needs to stop listing after 10th post.
+-->
 <div class="blog-post-list">
-  {% for post in site.posts %}
+  {%- for post in site.posts %}
     <section class="blog-excerpt">
       <h1>{{post.title}}</h1>
       <p class="post-date">{{post.date | date_to_long_string}}</p>
       {{post.excerpt}}
-      <p class="continue-reading"><a href="{{ post.url }}">Continue Reading</a></p>
+      <p class="continue-reading"><a href="{{post.url}}">Continue Reading</a></p>
     </section>
-  {% endfor %}
+  {% endfor -%}
 </div>

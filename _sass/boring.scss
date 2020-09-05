@@ -109,13 +109,16 @@ footer {
   text-align: center;
   margin-top: 1rem;
   padding-top: .5rem;
-  height: 1.8rem;
-  border: 1px solid #aaa;
-  background-color: #ccc;
+  height: 1.8rem;/*
+  border: 1px solid #AAA;
+  background-color: #CCC;*/
+
+    border: 1px solid #CCC;
+    background-color: #FCFCFC;
   color: #666;
 
   & small {
-    font-size: .8rem;
+    font-size: .75rem;
   }
 }
 
@@ -212,11 +215,15 @@ ul.navbar {
     margin: 0 0 .6rem;
     &:last-child { margin-bottom: 0; }
     padding: 1rem 1.5rem;
-    border: 1px solid #ccc;
-    background-color: #Fff;
+    border: 1px solid #CCC;
+    background-color: #FFF;
 
     & h1 {margin: 0 0 1rem; }
     & p { margin: 0; }
+    & .continue-reading {
+      text-align: right;
+      width: 100%;
+    }
 
     /*!! Blog post'tan araklama TODO(bora): belki bu da .blog-header olmalıdır?? */
 display: flex;
@@ -232,7 +239,6 @@ flex-wrap: wrap;
   font-style: italic;
   text-align: right;
 }
-
 
 @media (max-width: $bp-mobile) {
   & {
@@ -250,9 +256,7 @@ flex-wrap: wrap;
 }
     /* Araklama sonu*/
 
-    & .continue-reading {
-      text-align: right;
-    }
+    
   }
 }
 

@@ -4,12 +4,10 @@
   {% include head.html%}
 
   <title>
-    {%- if page.title -%}
-      {%- if layout.homepage -%}
-         {{site.title}}: {{site.motto}}
-      {%- else -%}
-        {{page.title}} - {{site.title}}
-      {%- endif -%}
+    {%- if layout.homepage -%}
+       {{site.title}}: {{site.motto}}
+    {%- else if page.title -%}
+      {{page.title}} - {{site.title}}
     {%- else -%}
       {{site.title}}
     {%- endif -%}
@@ -18,7 +16,7 @@
 <body>
 <main>
   <div class="container">
-    {% include navbar.html active=page.url collection=site.data.menu.entries %}
+    {% include navbar.html active=page.url collection=site.data.menu %}
     {{content}}
   </div>
 

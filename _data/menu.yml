@@ -1,9 +1,6 @@
-entries:
-    - title: Home
-      url: /
+navitems:
+  - title: Blog
+    url: /posts.html
 
-    - title: Blog
-      url: /posts.html
-
-    - title: About
-      url: /about.html
+  - title: About Me
+    url: /aboutme.html
