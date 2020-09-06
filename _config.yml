@@ -4,6 +4,7 @@ title: "b.ozdogan"
 motto: "42'nin yanındaki 2'yi attınız..."
 exclude:
   - docs
+  - README.md
   - openproject.bat
 copyright: Copyright &copy;2020 Bora Özdoğan. All Rights Reserved.
 excerpt_separator: "\n"

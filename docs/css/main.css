@@ -45,7 +45,7 @@ blockquote { font-style: italic; border: thin solid #232323; padding: 1rem; }
 
 blockquote p { margin: 0; }
 
-footer { text-align: center; margin-top: 1rem; padding-top: .5rem; height: 1.8rem; /* border: 1px solid #AAA; background-color: #CCC;*/ border: 1px solid #CCC; background-color: #FCFCFC; color: #666; }
+footer { text-align: center; margin-top: 1rem; padding-top: .5rem; height: 1.8rem; /* border: 1px solid #AAA; background-color: #CCC;*/ border-top: 1px solid #CCC; background-color: #FCFCFC; color: #666; }
 
 footer small { font-size: .75rem; }
 
